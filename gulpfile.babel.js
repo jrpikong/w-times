@@ -15,6 +15,12 @@ gulp.task('default', () => {
         .pipe(gulp.dest('./public/js'));
 });
 
+gulp.task('sass', function () {
+    return gulp.src('./resources/assets/sass/app.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./public/css'));
+});
+
 gulp.task('hmr', () => {
     const b = browserify({
         entries: 'resources/assets/js/app.js',
@@ -33,10 +39,4 @@ gulp.task('hmr', () => {
             .pipe(source('app.js'))
             .pipe(gulp.dest('public/js'));
     }
-});
-
-gulp.task('sass', function () {
-    return gulp.src('./resources/assets/sass/app.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./public/css'));
 });

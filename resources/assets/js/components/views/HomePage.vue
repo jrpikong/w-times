@@ -1,22 +1,427 @@
 <template>
-    <div class="ui three doubling cards basic segment">
-        <card :categories="[{link: '/', name: 'How To'}, {link: '/', name: 'In Depth'}]">
-            <span slot="title">V-cloak: Dealing with load latency in Vue.js</span>
-            <span slot="published">2 Days Ago</span>
-            <p slot="description">If you’re using Vue as an HTML templating engine, i.e. you’re placing vue template items directly in your HTML, then you may have noticed that the raw template items display for a short time before the Vue instance loads, which can look pretty ugly.</p>
-        </card>
-        <card :categories="[{link: '/', name: 'Vuetiful Project'}]">
-            <span slot="title">Vuetiful Project: Setting up an SPA with Vue.js and Laravel 5.4</span>
-            <span slot="published">3 Days Ago</span>
-            <p slot="description">
-It seems a bit silly to be writing a blog about vue.js on WordPress (Sorry WordPress, I think you’re great!). I mean, surely I can design my own site!? So, I thought it would be a good idea to start by going through a project to design the website for this blog</p>
-        </card>
-        <card :categories="[{link: '/', name: 'How To'}]" :likes="2" :comments="1">
-            <span slot="title">Slick File Uploads: Implementing a Bootstrap Progress Bar with vue-resource</span>
-            <span slot="published">4 Days Ago</span>
-            <p slot="description">
-In my previous post I discussed how to make a prettified file input that returns the file object. In this post we are going to look at how to upload the file we receive from our file input component and implement a progress bar.</p>
-        </card>
+    <div class="section">
+        <div class="col-md-12 col-xs-12 col-sm-12 nopadding">
+            <div class="heading colored">
+                <h2 class="main-heading">Whats New</h2>
+                <span class="heading-ping"></span>
+                <span class="heading-read-more">
+                           <a href="#" class="btn btn-black">all</a>
+                           <a href="#" class="btn btn-green">travel</a>
+                           <a href="#" class=" btn btn-red">fashion</a>
+                           </span>
+            </div>
+        </div>
+        <div class="row">
+            <article class="col-md-6 col-sm-6 col-xs-12">
+                <div class="grid-1">
+                    <div class="picture">
+                        <div class="category-image">
+                            <a href="standard-post.html">
+                                <img alt="" class="img-responsive" src="images/posts/40.jpg">
+                            </a>
+                            <div class="catname">
+                                <a class="btn btn-green" href="#">
+                                    <div>Travel</div>
+                                </a>
+                            </div>
+                            <div class="hover-show-div">
+                                <a href="" class="post-type">
+                                    <i class="ti-music-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="caption">
+                            <h5>
+                                <a href="standard-post.html">Computer issue for United Airlines in the U.S.</a>
+                            </h5>
+                        </div>
+                        <ul class="post-tools">
+                            <li> by <a href=""> <strong> Arsoo</strong> </a></li>
+                            <li>  5 Hours Ago </li>
+                            <li><a href=""> <i class="ti-thought"></i> 57</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-sm-6 col-xs-12">
+                <div class="grid-1">
+                    <div class="picture">
+                        <div class="category-image">
+                            <a href="standard-post.html">
+                                <img alt="" class="img-responsive" src="images/posts/41.jpg">
+                            </a>
+                            <div class="catname">
+                                <a class="btn btn-pink" href="#">
+                                    <div>Life Style</div>
+                                </a>
+                            </div>
+                            <div class="hover-show-div">
+                                <a href="" class="post-type">
+                                    <i class="ti-quote-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="caption">
+                            <h5>
+                                <a href="standard-post.html">Super Bowl battles a domain for being John</a>
+                            </h5>
+                        </div>
+                        <ul class="post-tools">
+                            <li> by <a href=""> <strong> Arsoo</strong> </a></li>
+                            <li>  3 Hours ago </li>
+                            <li><a href=""> <i class="ti-thought"></i> 57</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-sm-6 col-xs-12">
+                <div class="grid-1">
+                    <div class="picture">
+                        <div class="category-image">
+                            <a href="standard-post.html">
+                                <img alt="" class="img-responsive" src="images/posts/42.jpg">
+                            </a>
+                            <div class="catname">
+                                <a class="btn btn-lightblue" href="#">
+                                    <div>technology</div>
+                                </a>
+                            </div>
+                            <div class="hover-show-div">
+                                <a href="" class="post-type">
+                                    <i class="ti-image"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="caption">
+                            <h5>
+                                <a href="standard-post.html">Charity is buying a search engine for research papers</a>
+                            </h5>
+                        </div>
+                        <ul class="post-tools">
+                            <li> by <a href=""> <strong> Arsoo</strong> </a></li>
+                            <li>  5 mins Ago </li>
+                            <li><a href=""> <i class="ti-thought"></i> 57</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-sm-6 col-xs-12">
+                <div class="grid-1">
+                    <div class="picture">
+                        <div class="category-image">
+                            <a href="standard-post.html">
+                                <img alt="" class="img-responsive" src="images/posts/43.jpg">
+                            </a>
+                            <div class="catname">
+                                <a class="btn btn-maroon" href="#">
+                                    <div>Sports</div>
+                                </a>
+                            </div>
+                            <div class="hover-show-div">
+                                <a href="" class="post-type">
+                                    <i class="ti-music-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="caption">
+                            <h5>
+                                <a href="standard-post.html">Footbal Player steps forward to lead the National Park</a>
+                            </h5>
+                        </div>
+                        <ul class="post-tools">
+                            <li> by <a href=""> <strong> Arsoo</strong> </a></li>
+                            <li>  1 Month Ago </li>
+                            <li><a href=""> <i class="ti-thought"></i> 57</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="ad-div text-center">
+            <a href="" target="_blank"><img src="images/ads/adforest728.jpg" class="img-responsive" alt=""></a>
+        </div>
+        <div class="row">
+            <article class="col-md-6 col-sm-6 col-xs-12">
+                <div class="grid-1">
+                    <div class="picture">
+                        <div class="category-image">
+                            <a href="standard-post.html">
+                                <img alt="" class="img-responsive" src="images/posts/15.jpg">
+                            </a>
+                            <div class="catname">
+                                <a class="btn btn-green" href="#">
+                                    <div>Travel</div>
+                                </a>
+                            </div>
+                            <div class="hover-show-div">
+                                <a href="" class="post-type">
+                                    <i class="ti-music-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="caption">
+                            <h5>
+                                <a href="standard-post.html">Computer issue for United Airlines in the U.S.</a>
+                            </h5>
+                        </div>
+                        <ul class="post-tools">
+                            <li> by <a href=""> <strong> Arsoo</strong> </a></li>
+                            <li>  5 Hours Ago </li>
+                            <li><a href=""> <i class="ti-thought"></i> 57</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-sm-6 col-xs-12">
+                <div class="grid-1">
+                    <div class="picture">
+                        <div class="category-image">
+                            <a href="standard-post.html">
+                                <img alt="" class="img-responsive" src="images/posts/16.jpg">
+                            </a>
+                            <div class="catname">
+                                <a class="btn btn-pink" href="#">
+                                    <div>Life Style</div>
+                                </a>
+                            </div>
+                            <div class="hover-show-div">
+                                <a href="" class="post-type">
+                                    <i class="ti-quote-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="caption">
+                            <h5>
+                                <a href="standard-post.html">Super Bowl battles a domain for being John</a>
+                            </h5>
+                        </div>
+                        <ul class="post-tools">
+                            <li> by <a href=""> <strong> Arsoo</strong> </a></li>
+                            <li>  3 Hours ago </li>
+                            <li><a href=""> <i class="ti-thought"></i> 57</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-sm-6 col-xs-12">
+                <div class="grid-1">
+                    <div class="picture">
+                        <div class="category-image">
+                            <a href="standard-post.html">
+                                <img alt="" class="img-responsive" src="images/posts/17.jpg">
+                            </a>
+                            <div class="catname">
+                                <a class="btn btn-lightblue" href="#">
+                                    <div>technology</div>
+                                </a>
+                            </div>
+                            <div class="hover-show-div">
+                                <a href="" class="post-type">
+                                    <i class="ti-image"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="caption">
+                            <h5>
+                                <a href="standard-post.html">Charity is buying a search engine for research papers</a>
+                            </h5>
+                        </div>
+                        <ul class="post-tools">
+                            <li> by <a href=""> <strong> Arsoo</strong> </a></li>
+                            <li>  5 mins Ago </li>
+                            <li><a href=""> <i class="ti-thought"></i> 57</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-sm-6 col-xs-12">
+                <div class="grid-1">
+                    <div class="picture">
+                        <div class="category-image">
+                            <a href="standard-post.html">
+                                <img alt="" class="img-responsive" src="images/posts/19.jpg">
+                            </a>
+                            <div class="catname">
+                                <a class="btn btn-maroon" href="#">
+                                    <div>Sports</div>
+                                </a>
+                            </div>
+                            <div class="hover-show-div">
+                                <a href="" class="post-type">
+                                    <i class="ti-music-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="caption">
+                            <h5>
+                                <a href="standard-post.html">Footbal Player steps forward to lead the National Park</a>
+                            </h5>
+                        </div>
+                        <ul class="post-tools">
+                            <li> by <a href=""> <strong> Arsoo</strong> </a></li>
+                            <li>  1 Month Ago </li>
+                            <li><a href=""> <i class="ti-thought"></i> 57</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="ad-div text-center">
+            <a href="" target="_blank"><img src="images/ads/3.jpg" class="img-responsive" alt=""></a>
+        </div>
+        <div class="row">
+            <article class="col-md-6 col-sm-6 col-xs-12">
+                <div class="grid-1">
+                    <div class="picture">
+                        <div class="category-image">
+                            <a href="standard-post.html">
+                                <img alt="" class="img-responsive" src="images/posts/15.jpg">
+                            </a>
+                            <div class="catname">
+                                <a class="btn btn-green" href="#">
+                                    <div>Travel</div>
+                                </a>
+                            </div>
+                            <div class="hover-show-div">
+                                <a href="" class="post-type">
+                                    <i class="ti-music-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="caption">
+                            <h5>
+                                <a href="standard-post.html">Computer issue for United Airlines in the U.S.</a>
+                            </h5>
+                        </div>
+                        <ul class="post-tools">
+                            <li> by <a href=""> <strong> Arsoo</strong> </a></li>
+                            <li>  5 Hours Ago </li>
+                            <li><a href=""> <i class="ti-thought"></i> 57</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-sm-6 col-xs-12">
+                <div class="grid-1">
+                    <div class="picture">
+                        <div class="category-image">
+                            <a href="standard-post.html">
+                                <img alt="" class="img-responsive" src="images/posts/16.jpg">
+                            </a>
+                            <div class="catname">
+                                <a class="btn btn-pink" href="#">
+                                    <div>Life Style</div>
+                                </a>
+                            </div>
+                            <div class="hover-show-div">
+                                <a href="" class="post-type">
+                                    <i class="ti-quote-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="caption">
+                            <h5>
+                                <a href="standard-post.html">Super Bowl battles a domain for being John</a>
+                            </h5>
+                        </div>
+                        <ul class="post-tools">
+                            <li> by <a href=""> <strong> Arsoo</strong> </a></li>
+                            <li>  3 Hours ago </li>
+                            <li><a href=""> <i class="ti-thought"></i> 57</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-sm-6 col-xs-12">
+                <div class="grid-1">
+                    <div class="picture">
+                        <div class="category-image">
+                            <a href="standard-post.html">
+                                <img alt="" class="img-responsive" src="images/posts/17.jpg">
+                            </a>
+                            <div class="catname">
+                                <a class="btn btn-lightblue" href="#">
+                                    <div>technology</div>
+                                </a>
+                            </div>
+                            <div class="hover-show-div">
+                                <a href="" class="post-type">
+                                    <i class="ti-image"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="caption">
+                            <h5>
+                                <a href="standard-post.html">Charity is buying a search engine for research papers</a>
+                            </h5>
+                        </div>
+                        <ul class="post-tools">
+                            <li> by <a href=""> <strong> Arsoo</strong> </a></li>
+                            <li>  5 mins Ago </li>
+                            <li><a href=""> <i class="ti-thought"></i> 57</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-sm-6 col-xs-12">
+                <div class="grid-1">
+                    <div class="picture">
+                        <div class="category-image">
+                            <a href="standard-post.html">
+                                <img alt="" class="img-responsive" src="images/posts/19.jpg">
+                            </a>
+                            <div class="catname">
+                                <a class="btn btn-maroon" href="#">
+                                    <div>Sports</div>
+                                </a>
+                            </div>
+                            <div class="hover-show-div">
+                                <a href="" class="post-type">
+                                    <i class="ti-music-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="caption">
+                            <h5>
+                                <a href="standard-post.html">Footbal Player steps forward to lead the National Park</a>
+                            </h5>
+                        </div>
+                        <ul class="post-tools">
+                            <li> by <a href=""> <strong> Arsoo</strong> </a></li>
+                            <li>  1 Month Ago </li>
+                            <li><a href=""> <i class="ti-thought"></i> 57</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="show-more-btn">
+            <a href="" class="btn btn-colored-blog"> <i class="fa fa-refresh"></i>Load More </a>
+        </div>
     </div>
 </template>
 

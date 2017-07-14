@@ -5,13 +5,21 @@
         </div>
 
         <div id="content">
-            <div class="ui center aligned padded grid" :style="{'min-height' : minHeight + 'px'}">
-                <div class="column">
-                    <div class="ui basic segment">
-                        <router-view></router-view>
+            <card></card>
+            <section class="main-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12 col-xs-12">
+                            <div class="section">
+                                <router-view></router-view>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12" id="sidebar">
+                            <site-sidebar></site-sidebar>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
 
         <div id="footer">
@@ -23,10 +31,14 @@
 <script type="text/javascript">
 import NavMenu from './core/NavMenu.vue'
 import SiteFooter from './core/SiteFooter.vue'
+import SiteSidebar from './elements/Sidebar.vue'
+import Card from './elements/Card.vue'
 export default {
     components: {
         NavMenu,
-        SiteFooter
+        SiteFooter,
+        SiteSidebar,
+        Card
     },
     created() {
         window.addEventListener('resize', () => {
