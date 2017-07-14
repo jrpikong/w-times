@@ -3,7 +3,10 @@
   "scripts": {
     "serve": "php artisan serve",
     "hmr": "gulp hmr",
-    "dev": "npm-run-all --parallel hmr serve"
+    "semantic": "cd resources/assets/semantic && gulp build",
+    "sass": "gulp sass",
+    "dev": "npm-run-all --parallel hmr serve",
+    "ui" : "npm-run-all --sequential semantic sass"
   },
   "devDependencies": {
     "axios": "^0.16.2",
@@ -21,6 +24,7 @@
     "semantic-ui": "^2.2.11",
     "vinyl-source-stream": "^1.1.0",
     "vue": "^2.4.1",
+    "vue-router": "^2.7.0",
     "vueify": "^9.4.1",
     "watchify": "^3.9.0"
   },
